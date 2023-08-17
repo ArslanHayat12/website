@@ -8,28 +8,28 @@ import { HomePage } from './pages/HomePage/HomePage'
 import { ServicesPage } from './pages/ServicesPage/ServicesPage'
 import { AppStyled } from './style'
 import { createBrowserRouter, RouterProvider, BrowserRouter } from 'react-router-dom'
-const router = createBrowserRouter([
-    {
-        path: '/',
-        element: <App />
-    },
-    {
-        path: '/about',
-        element: <AboutPage />
-    },
-    {
-        path: '/contact',
-        element: <ContactPage />
-    },
-    {
-        path: '/services',
-        element: <ServicesPage />
-    },
-    {
-        path: '/career',
-        element: <CareerPage />
-    }
-])
+// const router = createBrowserRouter([
+//     {
+//         path: '/',
+//         element: <App />
+//     },
+//     {
+//         path: '/about',
+//         element: <AboutPage />
+//     },
+//     {
+//         path: '/contact',
+//         element: <ContactPage />
+//     },
+//     {
+//         path: '/services',
+//         element: <ServicesPage />
+//     },
+//     {
+//         path: '/career',
+//         element: <CareerPage />
+//     }
+// ])
 
 function App() {
     const [disableScroll, setDisableScroll] = useState(false)
@@ -38,7 +38,7 @@ function App() {
             <AppStyled className={disableScroll ? 'disable-scroll' : ''}>
                 <Header setDisableScroll={setDisableScroll} />
                 <div className="main-app-container">
-                    <RouterProvider router={router} />
+                    {/* <RouterProvider router={router} /> */}
                     <HomePage />
                 </div>
                 <Footer />
