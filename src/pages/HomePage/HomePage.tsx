@@ -68,7 +68,7 @@ export const HomePage = () => {
                 </div>
             </AboutSection>
             <ServicesSection className="m-80">
-                <div className="sub-title">Our Services</div>
+                <div className="sub-title p-c">Our Services</div>
                 <div className="title">High-impact services to grow your business</div>
                 <div className="service-cards">
                     <div className="card">

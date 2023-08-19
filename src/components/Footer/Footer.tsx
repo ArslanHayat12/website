@@ -22,8 +22,8 @@ export const Footer = () => {
                         <Link to={'/contact'} className="item">
                             Contact Us
                         </Link>
-                        <Link to={'/career'} className="item">
-                            Career
+                        <Link to={'/careers'} className="item">
+                            Careers
                         </Link>
                     </div>
                 </div>

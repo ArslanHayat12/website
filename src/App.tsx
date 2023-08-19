@@ -39,7 +39,7 @@ function App() {
                 <Header setDisableScroll={setDisableScroll} />
                 <div className="main-app-container">
                     {/* <RouterProvider router={router} /> */}
-                    <HomePage />
+                    <AboutPage />
                 </div>
                 <Footer />
             </AppStyled>

@@ -1,8 +1,9 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FiMenu } from 'react-icons/fi'
 import { ImCross } from 'react-icons/Im'
+import { getActiveTab } from '../../utils'
 import { HeaderStyle } from './style'
-import { useState } from 'react'
 
 type HeaderProps = {
     setDisableScroll: React.Dispatch<React.SetStateAction<boolean>>
@@ -25,20 +26,20 @@ export const Header = (props: HeaderProps) => {
                 >
                     <ImCross />{' '}
                 </div>
-                <Link to={'/'} className="item">
+                <Link to={'/'} className={`item ${getActiveTab() == 'home' ? 'active' : ''}`}>
                     Home
                 </Link>
-                <Link to={'/services'} className="item">
+                <Link to={'/services'} className={`item ${getActiveTab() == 'services' ? 'active' : ''}`}>
                     Services
                 </Link>
-                <Link to={'/about'} className="item">
+                <Link to={'/about'} className={`item ${getActiveTab() == 'about' ? 'active' : ''}`}>
                     About Us
                 </Link>
-                <Link to={'/contact'} className="item">
+                <Link to={'/contact'} className={`item ${getActiveTab() == 'contact' ? 'active' : ''}`}>
                     Contact Us
                 </Link>
-                <Link to={'/career'} className="item">
-                    Career
+                <Link to={'/careers'} className={`item ${getActiveTab() == 'careers' ? 'active' : ''}`}>
+                    Careers
                 </Link>
             </div>
             <div

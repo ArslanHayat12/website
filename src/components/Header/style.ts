@@ -9,7 +9,7 @@ export const HeaderStyle = styled.div`
     border-bottom: 1px solid #e2e2e2;
     gap: 20px;
     .logo {
-        height: 60px;
+        height: 50px;
         cursor: pointer;
         display: flex;
         align-items: center;
@@ -41,6 +41,10 @@ export const HeaderStyle = styled.div`
             cursor: pointer;
             height: 23px;
             text-align: center;
+            &.active {
+                color: var(--theme-color);
+                border-bottom: 1px solid var(--theme-color);
+            }
             &:hover {
                 color: var(--theme-color);
                 border-bottom: 1px solid var(--theme-color);
