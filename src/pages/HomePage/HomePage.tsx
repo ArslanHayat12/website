@@ -6,10 +6,11 @@ export const HomePage = () => {
             <div className="intro-section">
                 <div className="content-section">
                     <div className="sub-title p-c">Ocean of Technologies</div>
-                    <div className="title">Let's dive deep in Ocean of Technologies</div>
+                    <div className="title">Oceanic Tech Discoveries</div>
                     <div className="description s-c">
-                        Solving everyday business problems with robust solutions in the SaaS, analytics, cybersecurity,
-                        blockchain, and automations markets.
+                        Discover limitless possibilities with our comprehensive suite of web development, app creation, and data
+                        insights services. Elevate your brand's online presence and decision-making prowess. Join us in crafting a
+                        smarter, more connected future.
                     </div>
                 </div>
                 <div className="images-section">
@@ -25,29 +26,29 @@ export const HomePage = () => {
                 <div className="title">Trusted by the best companies in the world</div>
                 <div className="companies-logos">
                     <div className="image">
-                        <img src="/images/forkfreight.jpg" alt="" />
+                        <img src="/images/companies/forkfreight.png" alt="" />
                     </div>
                     <div className="image">
-                        <img src="/images/fankave.png" alt="" />
+                        <img src="/images/companies/fankave.png" alt="" />
                     </div>
                     <div className="image">
-                        <img src="/images/sc.svg" alt="" />
+                        <img src="/images/companies/sc.png" alt="" />
                     </div>
                     <div className="image">
-                        <img src="/images/tely.svg" alt="" />
+                        <img src="/images/companies/tely.png" alt="" />
                     </div>
                     <div className="image">
-                        <img src="/images/unilever.svg" alt="" />
+                        <img src="/images/companies/unilever.png" alt="" />
                     </div>
                 </div>
             </CompaniesSection>
             <AboutSection className="m-80">
                 <div className="images-section">
                     <div className="img-1">
-                        <img src="/images/bg2.jpeg" alt="" />
+                        <img src="/images/intro-1.jpeg" alt="" />
                     </div>
                     <div className="img-2">
-                        <img src="/images/bg3.jpeg" alt="" />
+                        <img src="/images/intro-2.jpg" alt="" />
                     </div>
                 </div>
                 <div className="content-section">
@@ -73,65 +74,67 @@ export const HomePage = () => {
                 <div className="service-cards">
                     <div className="card">
                         <div className="serice-logo">
-                            <img src="/images/sd.svg" alt="" />
+                            <img src="/images/services/software-development-icon.png" alt="" />
                         </div>
                         <div className="service-title">Software Development</div>
                         <div className="service-details">
-                            We offer software development services aimed at designing, supporting and evolving. We are known for
-                            serving mid and large-level enterprises.
+                            Crafting innovative software solutions to elevate your business. Expertise in coding, testing, and
+                            deployment for seamless user experiences.
                         </div>
                         <div className="bottom-bar c-1" />
                     </div>
                     <div className="card">
                         <div className="serice-logo">
-                            <img src="/images/wbd.svg" alt="" />
+                            <img src="/images/services/web-development-icon.png" alt="" />
                         </div>
                         <div className="service-title">Web Development</div>
                         <div className="service-details">
-                            Our team handles custom solutions of all sizes from large-scale technology projects to simple website
-                            design projects.
+                            Building engaging websites that captivate audiences. From design to functionality, we create digital
+                            experiences that leave a lasting impression.
                         </div>
                         <div className="bottom-bar c-2" />
                     </div>
                     <div className="card">
                         <div className="serice-logo">
-                            <img src="/images/wd.svg" alt="" />
+                            <img src="/images/services/web-designing-icon.png" alt="" />
                         </div>
                         <div className="service-title">Web Designing</div>
                         <div className="service-details">
-                            Our digital design process is developed from a passion for great User Interfaces (UI) that help drive
-                            a powerful User Experience (UX).
+                            Designing visually stunning websites that reflect your brand identity. We create captivating user
+                            interfaces for seamless online experiences.
                         </div>
                         <div className="bottom-bar c-3" />
                     </div>
                     <div className="card">
                         <div className="serice-logo">
-                            <img src="/images/ad.svg" alt="" />
+                            <img src="/images/services/app-development-icon.png" alt="" />
                         </div>
                         <div className="service-title">App Development</div>
                         <div className="service-details">
-                            Deliver speed, flexibility and mobility with our bespoke app development services. We ensure your apps
-                            meet users wherever they are, and work across any range of device types.
+                            Transforming ideas into cutting-edge apps. Expertise in mobile app development for Android and iOS,
+                            delivering exceptional user value.
                         </div>
                         <div className="bottom-bar c-4" />
                     </div>
                     <div className="card">
                         <div className="serice-logo">
-                            <img src="/images/aa.svg" alt="" />
+                            <img src="/images/services/analytics-icon.png" alt="" />
                         </div>
                         <div className="service-title">Apps Analytics</div>
                         <div className="service-details">
-                            We will provide all the analytics regarding the events that performed at user's end
+                            Uncover insights with our app analytics. Understand user behavior, optimize engagement, and enhance
+                            app performance for success.
                         </div>
                         <div className="bottom-bar c-5" />
                     </div>
                     <div className="card">
                         <div className="serice-logo">
-                            <img src="/images/aa.svg" alt="" />
+                            <img src="/images/services/data-scrapping-icon.png" alt="" />
                         </div>
-                        <div className="service-title">Web Apps Analytics</div>
+                        <div className="service-title">Web Scraping</div>
                         <div className="service-details">
-                            We will provide all the analytics regarding the events that performed at user's end
+                            Unlock valuable data with our web scraping service. Extract, analyze, and leverage information to gain
+                            a competitive edge.
                         </div>
                         <div className="bottom-bar c-6" />
                     </div>

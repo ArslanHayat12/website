@@ -45,15 +45,16 @@ export const AboutPage = () => {
             </AboutSection>
             <AboutSection className="m-80">
                 <div className="content-section">
-                    <div className="sub-title p-c">Our Mission</div>
-                    <div className="title">We started with a single mission: Help businesses grow</div>
+                    <div className="sub-title p-c">Our Purpose</div>
+                    <div className="title">Empowering Innovation Through Technology</div>
                     <div className="description s-c">
-                        We lead with a growth mindset on all fronts and focus on innovating disruptive solutions that have the
-                        potential to shape the future of work, technology, and everything in between.
-                        <br />
-                        <br />
-                        To make this possible we cultivate an honest, transparent, blunt, an open culture that is fueled by our
-                        team's unrelenting hunger of bringing sustainable and scalable change to the software industry.
+                        At <span className="p-c">Soft Ocean</span>, our mission is to drive innovation through technology
+                        solutions that transform businesses. We are committed to delivering exceptional software development, web
+                        development, web designing, app development, app analytics, and web scraping services that propel your
+                        brand forward. <br />
+                        <br /> With a passionate team dedicated to crafting cutting-edge solutions, we empower your digital
+                        journey, ensuring your success in an ever-evolving landscape. Experience excellence, unleash
+                        possibilities, and elevate your business with us.
                     </div>
                 </div>
                 <div className="images-section">

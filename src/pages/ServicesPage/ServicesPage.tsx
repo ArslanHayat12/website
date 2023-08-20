@@ -20,23 +20,25 @@ export const ServicesPage = () => {
                     </div>
                 </div>
                 <div className="images-section">
-                    <img src="/images/softd.jpg" alt="" />
+                    <img src="/images/services/software-development.jpg" alt="" />
                 </div>
             </ServiceCard>
             <ServiceCard className="m-80">
                 <div className="images-section t-img">
-                    <img src="/images/webd.avif" alt="" />
+                    <img src="/images/services/web-development.jpg" alt="" />
                 </div>
                 <div className="content-section">
                     <div className="c-title">Web Development</div>
                     <div className="c-description s-c">
-                        Empower your online presence with our expert web development. We create engaging, responsive websites that
-                        captivate audiences and drive results. From intuitive designs to seamless functionality, we build the
-                        digital face of your brand.
+                        Elevate your online presence with our web development service. From conceptualization to launch, we craft
+                        tailored websites that engage, inform, and captivate your audience. Our expertise spans responsive design,
+                        seamless functionality, and intuitive navigation, ensuring a user-centric experience. Partner with us to
+                        build a digital platform that embodies your brand's vision and drives impactful results in the digital
+                        realm.
                     </div>
                 </div>
                 <div className="images-section b-img">
-                    <img src="/images/webd.avif" alt="" />
+                    <img src="/images/services/web-development.jpg" alt="" />
                 </div>
             </ServiceCard>
             <ServiceCard className="m-80">
@@ -49,12 +51,12 @@ export const ServicesPage = () => {
                     </div>
                 </div>
                 <div className="images-section">
-                    <img src="/images/appd.jpg" alt="" />
+                    <img src="/images/services/app-development.png" alt="" />
                 </div>
             </ServiceCard>
             <ServiceCard className="m-80">
                 <div className="images-section t-img">
-                    <img src="/images/webDesign.jpg" alt="" />
+                    <img src="/images/services/web-designing.jpg" alt="" />
                 </div>
                 <div className="content-section">
                     <div className="c-title">Web Designing</div>
@@ -65,7 +67,7 @@ export const ServicesPage = () => {
                     </div>
                 </div>
                 <div className="images-section b-img">
-                    <img src="/images/webDesign.jpg" alt="" />
+                    <img src="/images/services/web-designing.jpg" alt="" />
                 </div>
             </ServiceCard>
             <ServiceCard className="m-80">
@@ -78,7 +80,24 @@ export const ServicesPage = () => {
                     </div>
                 </div>
                 <div className="images-section">
-                    <img src="/images/appa.jpg" alt="" />
+                    <img src="/images/services/app-analytics.jpg" alt="" />
+                </div>
+            </ServiceCard>
+            <ServiceCard className="m-80">
+                <div className="images-section t-img">
+                    <img src="/images/services/web-scraping.png" alt="" />
+                </div>
+                <div className="content-section">
+                    <div className="c-title">Web Scraping</div>
+                    <div className="c-description s-c">
+                        Elevate your business with our Python-powered web scraping service. We harness cutting-edge techniques to
+                        extract, organize, and analyze valuable data from diverse online sources. From market insights to
+                        competitive analysis, our service empowers you to make informed decisions and gain a strategic advantage.
+                        Trust our expertise to deliver accurate, timely, and actionable information that fuels your success.
+                    </div>
+                </div>
+                <div className="images-section b-img">
+                    <img src="/images/services/web-scraping.png" alt="" />
                 </div>
             </ServiceCard>
         </ServicesPageStyle>

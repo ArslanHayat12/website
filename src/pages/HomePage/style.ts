@@ -166,14 +166,16 @@ export const ServicesSection = styled.div`
         line-height: 1.125em;
         letter-spacing: 0.1em;
         text-transform: uppercase;
+        text-align: center;
     }
     .title {
-        margin: 20px 0 60px;
         color: #14142b;
         font-size: 40px;
         line-height: 1.316em;
         font-weight: 700;
-        min-width: 460px;
+        max-width: 460px;
+        text-align: center;
+        margin: 20px auto 60px;
     }
 
     .service-cards {
@@ -184,13 +186,21 @@ export const ServicesSection = styled.div`
             background: #fff;
             border: 1px solid;
             text-align: center;
-            padding: 64px 10px 24px;
+            padding: 24px 10px 24px;
             border: 1px solid #eff0f6;
             border-radius: 24px;
             box-shadow: 0 4px 22px 0 rgba(8, 15, 52, 0.03);
             height: 100%;
             display: flex;
             flex-direction: column;
+            .serice-logo {
+                width: 150px;
+                height: 150px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: auto;
+            }
             .service-title {
                 margin: 24px 0 10px;
                 color: #14142b;

@@ -36,16 +36,20 @@ export const ContactPage = () => {
                 </div>
                 <div className="cards">
                     <a href="mailto:anwaranees250@gmail.com" className="card" target="_blank" rel="noreferrer">
-                        <div className="icon email">
-                            <div className="opacity" />
-                            <MdEmail />
+                        <div>
+                            <div className="icon email">
+                                <div className="opacity" />
+                                <MdEmail />
+                            </div>
                         </div>
-                        <div className="text">info@softocean.com</div>
+                        <div className="text">anwaranees250@gmail.com</div>
                     </a>
                     {/* <a href="" className="card" target="_blank">
-                        <div className="icon contact">
+                        <div>
+                            <div className="icon contact">
                             <div className="opacity" />
                             <BsFillTelephoneFill />
+                        </div>
                         </div>
                         <div className="text">+923067574550</div>
                     </a> */}
