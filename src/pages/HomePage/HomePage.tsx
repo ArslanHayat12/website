@@ -25,7 +25,7 @@ export const HomePage = () => {
                 <div className="title">Trusted by the best companies in the world</div>
                 <div className="companies-logos">
                     <div className="image">
-                        <img src="/images/nuhtek.svg" alt="" />
+                        <img src="/images/forkfreight.jpg" alt="" />
                     </div>
                     <div className="image">
                         <img src="/images/fankave.png" alt="" />

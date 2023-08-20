@@ -209,7 +209,11 @@ export const ContactPageStyle = styled.div`
                 }
             }
             button {
-                padding: 22px 40px;
+                height: 63px;
+                width: 188px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 border: none;
                 border-radius: 10px;
                 background-color: var(--primary-color);
@@ -218,9 +222,22 @@ export const ContactPageStyle = styled.div`
                 font-weight: 700;
                 text-align: center;
                 font-size: 18px;
+                gap: 10px;
                 &:hover {
                     background-color: var(--theme-color);
                 }
+                svg {
+                    width: 30px;
+                    height: 30px;
+                    .path {
+                        stroke: #fff;
+                    }
+                }
+            }
+            .success-msg {
+                font-size: 18px;
+                line-height: 1.667em;
+                margin-top: 20px;
             }
         }
     }

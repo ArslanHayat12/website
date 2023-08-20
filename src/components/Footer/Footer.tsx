@@ -28,7 +28,9 @@ export const Footer = () => {
                     </div>
                 </div>
                 <div className="social">
-                    <div className="copy-rights s-c">Copyrights&copy; Soft Ocean 2023.</div>
+                    <div className="copy-rights s-c">
+                        Copyrights&copy; <span className="th-c">Soft Ocean</span> 2023.
+                    </div>
                     <div className="social-icons">
                         <a href="#" target="_blank" className="icon">
                             <img src="/images/fb.png" alt="" />

@@ -20,7 +20,6 @@ export const AboutPage = () => {
         }
     }, [])
 
-    console.log(window.location.pathname)
     return (
         <AboutPageStyle>
             <AboutSection className="m-80">
@@ -31,11 +30,11 @@ export const AboutPage = () => {
                     <div className="sub-title p-c">About Soft Ocean</div>
                     <div className="title">Innovating Software Solutions for Tomorrow's Challenges</div>
                     <div className="description s-c">
-                        At Soft Ocean, we're a dynamic software company dedicated to crafting solutions that drive efficiency,
-                        streamline operations, and elevate user experiences. With a focus on innovation and cutting-edge
-                        technology, we deliver bespoke software tailored to your needs. Our team of skilled developers thrives on
-                        turning ideas into reality, empowering businesses to stay ahead in the digital landscape. Let's shape the
-                        future together. <br />
+                        At <span className="th-c">Soft Ocean</span>, we're a dynamic software company dedicated to crafting
+                        solutions that drive efficiency, streamline operations, and elevate user experiences. With a focus on
+                        innovation and cutting-edge technology, we deliver bespoke software tailored to your needs. Our team of
+                        skilled developers thrives on turning ideas into reality, empowering businesses to stay ahead in the
+                        digital landscape. Let's shape the future together. <br />
                         <br />
                         With a deep understanding of industry trends and an unwavering dedication to quality, we transform complex
                         challenges into streamlined solutions. Whether it's custom software development, web designing, web
