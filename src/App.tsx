@@ -1,13 +1,13 @@
-import { useRef, useState } from 'react'
+import { useState } from 'react'
 import { Footer } from './components/Footer/Footer'
 import { Header } from './components/Header/Header'
 import { AboutPage } from './pages/AboutPage/AboutPage'
-import { CareerPage } from './pages/CareerPage/CareerPage'
+// import { CareerPage } from './pages/CareerPage/CareerPage'
 import { ContactPage } from './pages/ContactPage/ContactPage'
 import { HomePage } from './pages/HomePage/HomePage'
 import { ServicesPage } from './pages/ServicesPage/ServicesPage'
 import { AppStyled } from './style'
-import { createBrowserRouter, RouterProvider, BrowserRouter } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 // const router = createBrowserRouter([
 //     {
 //         path: '/',

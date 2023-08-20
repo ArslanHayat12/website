@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BsFillTelephoneFill } from 'react-icons/bs'
+// import { BsFillTelephoneFill } from 'react-icons/bs'
 import { MdEmail } from 'react-icons/md'
 import emailjs from 'emailjs-com'
 import { ContactPageStyle } from './style'
@@ -19,6 +19,7 @@ export const ContactPage = () => {
                 setFormSubmitted(true)
             })
             .catch((error) => {
+                setFormSubmiting(false)
                 console.error('Error sending email:', error)
             })
     }
@@ -34,7 +35,7 @@ export const ContactPage = () => {
                     careers or simply to say Hi!
                 </div>
                 <div className="cards">
-                    <a href="mailto:anwaranees250@gmail.com" className="card" target="_blank">
+                    <a href="mailto:anwaranees250@gmail.com" className="card" target="_blank" rel="noreferrer">
                         <div className="icon email">
                             <div className="opacity" />
                             <MdEmail />
@@ -58,7 +59,7 @@ export const ContactPage = () => {
                         <a href="#" target="_blank" className="icon">
                             <img src="/images/instagram.jpg" alt="" />
                         </a>
-                        <a href="https://www.linkedin.com/company/soft-ocean/" target="_blank" className="icon">
+                        <a href="https://www.linkedin.com/company/soft-ocean/" target="_blank" className="icon" rel="noreferrer">
                             <img src="/images/linkedIn.png" alt="" />
                         </a>
                         <a href="#" target="_blank" className="icon">
@@ -103,7 +104,7 @@ export const ContactPage = () => {
                     </button>
                     {formSubmitted && (
                         <div className="success-msg p-c">
-                            Thanks {name} for connecting with us. Our team will be contact you soon.
+                            Thanks {name} for connecting with us. Our team will contact with you soon.
                         </div>
                     )}
                 </form>
