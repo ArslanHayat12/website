@@ -8,7 +8,7 @@ import { AboutPageStyle, AboutSection, ValuesSection } from './style'
 import { AccountabilityIcon, CommitmentIcon, EfficiencyIcon, GrowthMindsetIcon, LearningIcon, TeamWorkIcon } from '../../assets'
 
 export const AboutPage = () => {
-    const [slidesPerView, setSlidesPerView] = useState(3)
+    const [slidesPerView, setSlidesPerView] = useState(window.innerWidth > 800 ? 3 : window.innerWidth > 520 ? 2 : 1)
 
     const handleResize = () => {
         setSlidesPerView(window.innerWidth > 800 ? 3 : window.innerWidth > 520 ? 2 : 1)

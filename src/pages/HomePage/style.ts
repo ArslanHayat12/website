@@ -150,9 +150,6 @@ export const AboutSection = styled.div`
             }
         }
         .images-section {
-            .img-1 {
-                height: 90vh;
-            }
             .img-2 {
                 left: 0;
             }

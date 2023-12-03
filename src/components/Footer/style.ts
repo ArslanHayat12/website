@@ -31,6 +31,10 @@ export const FooterStyle = styled.footer`
                     cursor: pointer;
                     width: max-content;
                     height: 23px;
+                    &.active {
+                        color: var(--theme-color);
+                        border-bottom: 1px solid var(--theme-color);
+                    }
                     &:hover {
                         color: var(--theme-color);
                         border-bottom: 1px solid var(--theme-color);

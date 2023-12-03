@@ -1,7 +1,12 @@
 import { FooterStyle } from './style'
 import { Link } from 'react-router-dom'
 
-export const Footer = () => {
+type FooterProps = {
+    setActiveTab: React.Dispatch<React.SetStateAction<string>>
+    activeTab: string
+}
+export const Footer = (props: FooterProps) => {
+    const { activeTab, setActiveTab } = props
     return (
         <FooterStyle>
             <div className="f-container">
@@ -10,21 +15,41 @@ export const Footer = () => {
                         <img src="/images/logo.png" alt="" />
                     </div>
                     <div className="items">
-                        <Link to={'/'} className="item">
+                        <Link
+                            to={'/'}
+                            onClick={() => setActiveTab('home')}
+                            className={`item ${activeTab == 'home' ? 'active' : ''}`}
+                        >
                             Home
                         </Link>
-                        <Link to={'/services'} className="item">
+                        <Link
+                            to={'/services'}
+                            onClick={() => setActiveTab('services')}
+                            className={`item ${activeTab == 'services' ? 'active' : ''}`}
+                        >
                             Services
                         </Link>
-                        <Link to={'/about'} className="item">
+                        <Link
+                            to={'/about'}
+                            onClick={() => setActiveTab('about')}
+                            className={`item ${activeTab == 'about' ? 'active' : ''}`}
+                        >
                             About Us
                         </Link>
-                        <Link to={'/contact'} className="item">
+                        <Link
+                            to={'/contact'}
+                            onClick={() => setActiveTab('contact')}
+                            className={`item ${activeTab == 'contact' ? 'active' : ''}`}
+                        >
                             Contact Us
                         </Link>
-                        <Link to={'/careers'} className="item">
+                        {/* <Link
+                            to={'/careers'}
+                            onClick={() => setActiveTab('careers')}
+                            className={`item ${activeTab == 'careers' ? 'active' : ''}`}
+                        >
                             Careers
-                        </Link>
+                        </Link> */}
                     </div>
                 </div>
                 <div className="social">
@@ -38,7 +63,7 @@ export const Footer = () => {
                         <a href="#" target="_blank" className="icon">
                             <img src="/images/instagram.jpg" alt="" />
                         </a>
-                        <a href="https://www.linkedin.com/company/soft-ocean/" target="_blank" className="icon">
+                        <a href="#" target="_blank" className="icon">
                             <img src="/images/linkedIn.png" alt="" />
                         </a>
                         <a href="#" target="_blank" className="icon">

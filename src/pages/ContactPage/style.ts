@@ -166,6 +166,7 @@ export const ContactPageStyle = styled.div`
 
     .form-card {
         flex: 1;
+        width: 100%;
         .fields {
             padding: 70px 30px;
             border: 1px solid #eff0f6;

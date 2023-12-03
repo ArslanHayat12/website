@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import {  Route,  Routes, createBrowserRouter } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import { Route, Routes, createBrowserRouter } from 'react-router-dom'
 import { Footer } from './components/Footer/Footer'
 import { Header } from './components/Header/Header'
 import { AboutPage } from './pages/AboutPage/AboutPage'
@@ -11,9 +11,24 @@ import { AppStyled } from './style'
 
 function App() {
     const [disableScroll, setDisableScroll] = useState(false)
+    const [activeTab, setActiveTab] = useState('home')
+    useEffect(() => {
+        const path = window.location.pathname
+        if (path.includes('/about')) {
+            setActiveTab('about')
+        } else if (path.includes('/services')) {
+            setActiveTab('services')
+        } else if (path.includes('/careers')) {
+            setActiveTab('careers')
+        } else if (path.includes('/contact')) {
+            setActiveTab('contact')
+        } else {
+            setActiveTab('home')
+        }
+    }, [])
     return (
         <AppStyled className={disableScroll ? 'disable-scroll' : ''}>
-            <Header setDisableScroll={setDisableScroll} />
+            <Header setDisableScroll={setDisableScroll} setActiveTab={setActiveTab} activeTab={activeTab} />
 
             <div className="main-app-container">
                 <Routes>
@@ -29,7 +44,7 @@ function App() {
                     <ServicesPage />
                     <ContactPage /> */}
             </div>
-            <Footer />
+            <Footer setActiveTab={setActiveTab} activeTab={activeTab} />
         </AppStyled>
     )
 }

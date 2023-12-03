@@ -35,14 +35,14 @@ export const ContactPage = () => {
                     careers or simply to say Hi!
                 </div>
                 <div className="cards">
-                    <a href="mailto:anwaranees250@gmail.com" className="card" target="_blank" rel="noreferrer">
+                    <a href="mailto:mahrukhwaheed@gmail.com" className="card" target="_blank" rel="noreferrer">
                         <div>
                             <div className="icon email">
                                 <div className="opacity" />
                                 <MdEmail />
                             </div>
                         </div>
-                        <div className="text">anwaranees250@gmail.com</div>
+                        <div className="text">mahrukhwaheed@gmail.com</div>
                     </a>
                     {/* <a href="" className="card" target="_blank">
                         <div>
