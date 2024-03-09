@@ -16,6 +16,8 @@ export const FooterStyle = styled.footer`
                 max-width: 350px;
                 width: 100%;
                 cursor: pointer;
+                font-size: 35px;
+                color: var(--theme-color);
                 img {
                     max-height: 100%;
                     max-width: 100%;

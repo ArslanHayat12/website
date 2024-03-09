@@ -1,28 +1,28 @@
-import { AboutSection, CompaniesSection, HomePageStyle, ServicesSection } from './style'
+import { BsFillTelephoneFill } from 'react-icons/bs'
+import { MdEmail } from 'react-icons/md'
+import { AboutSection, HomePageStyle, ServicesSection } from './style'
 
 export const HomePage = () => {
     return (
         <HomePageStyle>
-            <div className="intro-section">
+            <div className="intro-section m-80">
                 <div className="content-section">
-                    <div className="sub-title p-c">Ocean of Technologies</div>
-                    <div className="title">Oceanic Tech Discoveries</div>
+                    <div className="sub-title p-c">
+                        Offshoring <br />
+                        Done right!
+                    </div>
+                    <div className="title">Your Offshore IT Partners</div>
                     <div className="description s-c">
-                        Discover limitless possibilities with our comprehensive suite of web development, app creation, and data
-                        insights services. Elevate your brand's online presence and decision-making prowess. Join us in crafting a
-                        smarter, more connected future.
+                        We understand the difficulties of offshore resource management, we are here to help.
                     </div>
                 </div>
                 <div className="images-section">
                     <div className="img-1">
-                        <img src="/images/banner-img1.svg" alt="" />
-                    </div>
-                    <div className="img-2">
-                        <img src="/images/banner-img2.png" alt="" />
+                        <img src="/images/banner-img1.png" alt="" />
                     </div>
                 </div>
             </div>
-            <CompaniesSection className="m-80">
+            {/* <CompaniesSection className="m-80">
                 <div className="title">Trusted by the best companies in the world</div>
                 <div className="companies-logos">
                     <div className="image">
@@ -41,7 +41,7 @@ export const HomePage = () => {
                         <img src="/images/companies/unilever.png" alt="" />
                     </div>
                 </div>
-            </CompaniesSection>
+            </CompaniesSection> */}
             <AboutSection className="m-80">
                 <div className="images-section">
                     <div className="img-1">
@@ -53,18 +53,17 @@ export const HomePage = () => {
                 </div>
                 <div className="content-section">
                     <div className="sub-title p-c">About Us</div>
-                    <div className="title">Innovating Software Solutions for Tomorrow's Challenges</div>
+                    <div className="title">About NexTech Offshore</div>
                     <div className="description s-c">
-                        At Soft Ocean, we're a dynamic software company dedicated to crafting solutions that drive efficiency,
-                        streamline operations, and elevate user experiences. With a focus on innovation and cutting-edge
-                        technology, we deliver bespoke software tailored to your needs. Our team of skilled developers thrives on
-                        turning ideas into reality, empowering businesses to stay ahead in the digital landscape. Let's shape the
-                        future together. <br />
+                        <span className="p-c">Our Vision:</span> To be the premier one-stop solution for all offshore IT needs,
+                        empowering businesses with global talent and opportunities.
                         <br />
-                        With a deep understanding of industry trends and an unwavering dedication to quality, we transform complex
-                        challenges into streamlined solutions. Whether it's custom software development, web designing, web
-                        applications or mobile apps, we blend creativity with technical expertise to create softwares that drive
-                        success.
+                        <span className="p-c">​Our Mission:</span> At NexTech Offshore, our mission is to fulfill the IT staffing
+                        needs of our esteemed clients in the United States by connecting them with the finest IT resources
+                        worldwide. To achieve this, we embrace innovation, exploring new markets to source sought-after talent,
+                        delivering the highest value at the most competitive costs. As we build bridges between businesses and
+                        their staffing needs, we also strive to uplift the workforce in emerging markets, offering them better
+                        opportunities and pathways for career growth, thus transforming lives for the better.
                     </div>
                 </div>
             </AboutSection>
@@ -73,6 +72,106 @@ export const HomePage = () => {
                 <div className="title">High-impact services to grow your business</div>
                 <div className="service-cards">
                     <div className="card">
+                        {/* <div className="serice-logo">
+                            <img src="/images/services/software-development-icon.png" alt="" />
+                        </div> */}
+                        <div className="service-title">Web Developers</div>
+                        <div className="service-details">
+                            These developers specialize in building websites and web applications. They are proficient in frontend
+                            technologies like HTML, CSS, and JavaScript, as well as backend languages and frameworks like Node.js,
+                            Python (Django), Ruby (Ruby on Rails), and PHP (Laravel).
+                        </div>
+                        <div className="bottom-bar c-1" />
+                    </div>
+                    <div className="card">
+                        {/* <div className="serice-logo">
+                            <img src="/images/services/software-development-icon.png" alt="" />
+                        </div> */}
+                        <div className="service-title">Mobile App Developers</div>
+                        <div className="service-details">
+                            These developers focus on creating applications for mobile devices. They may specialize in developing
+                            for Android using Java or Kotlin or for iOS using Swift or Objective-C
+                        </div>
+                        <div className="bottom-bar c-1" />
+                    </div>
+                    <div className="card">
+                        {/* <div className="serice-logo">
+                            <img src="/images/services/software-development-icon.png" alt="" />
+                        </div> */}
+                        <div className="service-title">Full Stack Developers</div>
+                        <div className="service-details">
+                            Full stack developers have expertise in both frontend and backend development. They can handle all
+                            aspects of a web application, making them versatile and valuable team members
+                        </div>
+                        <div className="bottom-bar c-1" />
+                    </div>
+                    <div className="card">
+                        {/* <div className="serice-logo">
+                            <img src="/images/services/software-development-icon.png" alt="" />
+                        </div> */}
+                        <div className="service-title">DevOps Engineers</div>
+                        <div className="service-details">
+                            DevOps engineers bridge the gap between development and operations. They focus on automating
+                            processes, managing deployments, and ensuring smooth collaboration between development and IT teams.
+                        </div>
+                        <div className="bottom-bar c-1" />
+                    </div>
+                    <div className="card">
+                        {/* <div className="serice-logo">
+                            <img src="/images/services/software-development-icon.png" alt="" />
+                        </div> */}
+                        <div className="service-title">Data Engineers</div>
+                        <div className="service-details">
+                            Data engineers work on data-related tasks, such as designing and managing databases, creating data
+                            pipelines, and handling data processing and storage.
+                        </div>
+                        <div className="bottom-bar c-1" />
+                    </div>
+                    <div className="card">
+                        {/* <div className="serice-logo">
+                            <img src="/images/services/software-development-icon.png" alt="" />
+                        </div> */}
+                        <div className="service-title">Machine Learning Engineers</div>
+                        <div className="service-details">
+                            These developers work on artificial intelligence (AI) and machine learning projects, building and
+                            implementing algorithms and models.
+                        </div>
+                        <div className="bottom-bar c-1" />
+                    </div>
+                    <div className="card">
+                        {/* <div className="serice-logo">
+                            <img src="/images/services/software-development-icon.png" alt="" />
+                        </div> */}
+                        <div className="service-title">Game Developers</div>
+                        <div className="service-details">
+                            Game developers specialize in creating video games for various platforms, such as PC, consoles, or
+                            mobile devices. They may work with game engines like Unity or Unreal Engine.
+                        </div>
+                        <div className="bottom-bar c-1" />
+                    </div>
+                    <div className="card">
+                        {/* <div className="serice-logo">
+                            <img src="/images/services/software-development-icon.png" alt="" />
+                        </div> */}
+                        <div className="service-title">Cloud Engineers</div>
+                        <div className="service-details">
+                            Cloud engineers focus on deploying, managing, and optimizing applications on cloud platforms like
+                            Amazon Web Services (AWS), Microsoft Azure, or Google Cloud Platform (GCP).
+                        </div>
+                        <div className="bottom-bar c-1" />
+                    </div>
+                    <div className="card">
+                        {/* <div className="serice-logo">
+                            <img src="/images/services/software-development-icon.png" alt="" />
+                        </div> */}
+                        <div className="service-title">Security Engineers</div>
+                        <div className="service-details">
+                            Security engineers specialize in identifying and mitigating security vulnerabilities in software and
+                            implementing measures to protect data and systems.
+                        </div>
+                        <div className="bottom-bar c-1" />
+                    </div>
+                    {/* <div className="card">
                         <div className="serice-logo">
                             <img src="/images/services/software-development-icon.png" alt="" />
                         </div>
@@ -82,8 +181,8 @@ export const HomePage = () => {
                             deployment for seamless user experiences.
                         </div>
                         <div className="bottom-bar c-1" />
-                    </div>
-                    <div className="card">
+                    </div> */}
+                    {/* <div className="card">
                         <div className="serice-logo">
                             <img src="/images/services/web-development-icon.png" alt="" />
                         </div>
@@ -137,7 +236,27 @@ export const HomePage = () => {
                             a competitive edge.
                         </div>
                         <div className="bottom-bar c-6" />
+                    </div> */}
+                </div>
+            </ServicesSection>
+            <ServicesSection className="m-80 contact-us">
+                {/* <div className="sub-title p-c">Our Services</div> */}
+                <div className="title">Contact Us</div>
+                <div className="description s-c">
+                    Get in touch with <span className="p-c">Nextech Offshore</span>
+                    <br /> today regarding any enquires about IT services, careers or simply to say Hi!
+                </div>
+                <div className="email-cont">
+                    <div className="icon">
+                        <MdEmail />
                     </div>
+                    <div className="text">Information@nextechoffshore.com</div>
+                </div>
+                <div className="email-cont">
+                    <div className="icon">
+                        <BsFillTelephoneFill />
+                    </div>
+                    <div className="text">+1 847-527-9962</div>
                 </div>
             </ServicesSection>
         </HomePageStyle>

@@ -25,13 +25,14 @@ export const ServiceCard = styled.div`
     display: flex;
     align-items: center;
     gap: 40px;
+    margin: 45px 0;
     .content-section {
         position: relative;
         flex: 1;
         .c-title {
             margin-bottom: 12px;
             color: #14142b;
-            font-size: 40px;
+            font-size: 35px;
             line-height: 1.316em;
             font-weight: 700;
         }

@@ -16,7 +16,8 @@ export const Header = (props: HeaderProps) => {
     return (
         <HeaderStyle>
             <div className="logo">
-                <img src="/images/logo.png" alt="" />
+                {/* <img src="/images/logo.png" alt="" /> */}
+                NexTech Offshore
             </div>
             <div className={`items ${showMenu ? 'show-menu' : ''}`}>
                 <div
@@ -45,13 +46,13 @@ export const Header = (props: HeaderProps) => {
                 >
                     About Us
                 </Link>
-                <Link
+                {/* <Link
                     to={'/contact'}
                     onClick={() => setActiveTab('contact')}
                     className={`item ${activeTab == 'contact' ? 'active' : ''}`}
                 >
                     Contact Us
-                </Link>
+                </Link> */}
                 {/* <Link to={'/careers'} onClick={()=>setActiveTab('careers')} className={`item ${activeTab == 'careers' ? 'active' : ''}`}>
                     Careers
                 </Link> */}

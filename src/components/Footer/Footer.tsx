@@ -12,7 +12,8 @@ export const Footer = (props: FooterProps) => {
             <div className="f-container">
                 <div className="footer-content">
                     <div className="logo">
-                        <img src="/images/logo.png" alt="" />
+                        {/* <img src="/images/logo.png" alt="" /> */}
+                        NexTech Offshore
                     </div>
                     <div className="items">
                         <Link
@@ -36,13 +37,13 @@ export const Footer = (props: FooterProps) => {
                         >
                             About Us
                         </Link>
-                        <Link
+                        {/* <Link
                             to={'/contact'}
                             onClick={() => setActiveTab('contact')}
                             className={`item ${activeTab == 'contact' ? 'active' : ''}`}
                         >
                             Contact Us
-                        </Link>
+                        </Link> */}
                         {/* <Link
                             to={'/careers'}
                             onClick={() => setActiveTab('careers')}

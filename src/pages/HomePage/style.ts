@@ -4,7 +4,6 @@ export const HomePageStyle = styled.div`
     .intro-section {
         display: flex;
         align-items: center;
-        padding: 80px 0;
         gap: 40px;
         .content-section {
             flex: 1;
@@ -174,7 +173,31 @@ export const ServicesSection = styled.div`
         text-align: center;
         margin: 20px auto 60px;
     }
-
+    &.contact-us {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        .title {
+            color: #14142b;
+            font-size: 40px;
+            line-height: 1.316em;
+            font-weight: 700;
+            max-width: 460px;
+            text-align: center;
+            margin: 20px auto 10px;
+        }
+        .description {
+            font-size: 18px;
+            line-height: 1.667em;
+            text-align: center;
+        }
+        .email-cont {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
     .service-cards {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));

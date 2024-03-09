@@ -46,6 +46,46 @@ export const AboutSection = styled.div`
     }
 `
 
+export const HelpSection = styled.div`
+    .sub-title {
+        font-size: 16px;
+        line-height: 1.125em;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .title {
+        color: #14142b;
+        font-size: 40px;
+        line-height: 1.316em;
+        font-weight: 700;
+        max-width: 460px;
+        text-align: center;
+        margin: 20px auto 60px;
+    }
+    .item {
+        margin-bottom: 30px;
+        .item-title {
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        .description {
+            .sol {
+                margin-top: 4px;
+                font-weight: 500;
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        .title {
+            font-size: 32px;
+            max-width: 440px;
+            min-width: unset;
+        }
+    }
+`
+
 export const ValuesSection = styled.div`
     .sub-title {
         font-size: 16px;

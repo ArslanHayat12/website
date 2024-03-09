@@ -13,6 +13,8 @@ export const HeaderStyle = styled.div`
         cursor: pointer;
         display: flex;
         align-items: center;
+        font-size: 35px;
+        color: var(--theme-color);
         img {
             max-height: 100%;
             max-width: 100%;
