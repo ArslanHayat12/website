@@ -67,6 +67,7 @@ export const HelpSection = styled.div`
     .item {
         margin-bottom: 30px;
         .item-title {
+            color: rgb(20, 20, 43);
             font-size: 24px;
             font-weight: 500;
             margin-bottom: 10px;
