@@ -43,7 +43,7 @@ export const AboutPage = () => {
                 </div>
             </AboutSection>
 
-            <HelpSection className="m-80">
+            <HelpSection className="m-80" id="help">
                 <div className="sub-title p-c">How we can Help</div>
                 <div className="title">Challenges in Managing Offshore workforce</div>
                 <div className="item">

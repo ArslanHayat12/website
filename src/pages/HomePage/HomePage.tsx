@@ -1,6 +1,7 @@
 import { BsFillTelephoneFill } from 'react-icons/bs'
 import { MdEmail } from 'react-icons/md'
 import { AboutSection, HomePageStyle, ServicesSection } from './style'
+import { Link } from 'react-router-dom'
 
 export const HomePage = () => {
     return (
@@ -64,6 +65,13 @@ export const HomePage = () => {
                         delivering the highest value at the most competitive costs. As we build bridges between businesses and
                         their staffing needs, we also strive to uplift the workforce in emerging markets, offering them better
                         opportunities and pathways for career growth, thus transforming lives for the better.
+                        <br />
+                        Learn more about how we can help managing an Offshore workforce
+                    </div>
+                    <div className="button-cont">
+                        <Link to={'/about/#help'} className="button">
+                            Learn More
+                        </Link>
                     </div>
                 </div>
             </AboutSection>
@@ -72,9 +80,9 @@ export const HomePage = () => {
                 <div className="title">High-impact services to grow your business</div>
                 <div className="service-cards">
                     <div className="card">
-                        {/* <div className="serice-logo">
-                            <img src="/images/services/software-development-icon.png" alt="" />
-                        </div> */}
+                        <div className="serice-logo">
+                            <img src="/images/services/web-development-icon.png" alt="" />
+                        </div>
                         <div className="service-title">Web Developers</div>
                         <div className="service-details">
                             These developers specialize in building websites and web applications. They are proficient in frontend
@@ -84,9 +92,9 @@ export const HomePage = () => {
                         <div className="bottom-bar c-1" />
                     </div>
                     <div className="card">
-                        {/* <div className="serice-logo">
-                            <img src="/images/services/software-development-icon.png" alt="" />
-                        </div> */}
+                        <div className="serice-logo">
+                            <img src="/images/services/app-development-icon.png" alt="" />
+                        </div>
                         <div className="service-title">Mobile App Developers</div>
                         <div className="service-details">
                             These developers focus on creating applications for mobile devices. They may specialize in developing
@@ -95,9 +103,9 @@ export const HomePage = () => {
                         <div className="bottom-bar c-1" />
                     </div>
                     <div className="card">
-                        {/* <div className="serice-logo">
+                        <div className="serice-logo">
                             <img src="/images/services/software-development-icon.png" alt="" />
-                        </div> */}
+                        </div>
                         <div className="service-title">Full Stack Developers</div>
                         <div className="service-details">
                             Full stack developers have expertise in both frontend and backend development. They can handle all
@@ -106,9 +114,9 @@ export const HomePage = () => {
                         <div className="bottom-bar c-1" />
                     </div>
                     <div className="card">
-                        {/* <div className="serice-logo">
-                            <img src="/images/services/software-development-icon.png" alt="" />
-                        </div> */}
+                        <div className="serice-logo">
+                            <img src="/images/services/dev-ops.png" alt="" />
+                        </div>
                         <div className="service-title">DevOps Engineers</div>
                         <div className="service-details">
                             DevOps engineers bridge the gap between development and operations. They focus on automating
@@ -117,9 +125,9 @@ export const HomePage = () => {
                         <div className="bottom-bar c-1" />
                     </div>
                     <div className="card">
-                        {/* <div className="serice-logo">
-                            <img src="/images/services/software-development-icon.png" alt="" />
-                        </div> */}
+                        <div className="serice-logo">
+                            <img src="/images/services/data-scrapping-icon.png" alt="" />
+                        </div>
                         <div className="service-title">Data Engineers</div>
                         <div className="service-details">
                             Data engineers work on data-related tasks, such as designing and managing databases, creating data
@@ -128,9 +136,9 @@ export const HomePage = () => {
                         <div className="bottom-bar c-1" />
                     </div>
                     <div className="card">
-                        {/* <div className="serice-logo">
-                            <img src="/images/services/software-development-icon.png" alt="" />
-                        </div> */}
+                        <div className="serice-logo">
+                            <img src="/images/services/machine-learning.png" alt="" />
+                        </div>
                         <div className="service-title">Machine Learning Engineers</div>
                         <div className="service-details">
                             These developers work on artificial intelligence (AI) and machine learning projects, building and
@@ -139,9 +147,9 @@ export const HomePage = () => {
                         <div className="bottom-bar c-1" />
                     </div>
                     <div className="card">
-                        {/* <div className="serice-logo">
-                            <img src="/images/services/software-development-icon.png" alt="" />
-                        </div> */}
+                        <div className="serice-logo">
+                            <img src="/images/services/game-development.png" alt="" />
+                        </div>
                         <div className="service-title">Game Developers</div>
                         <div className="service-details">
                             Game developers specialize in creating video games for various platforms, such as PC, consoles, or
@@ -150,9 +158,9 @@ export const HomePage = () => {
                         <div className="bottom-bar c-1" />
                     </div>
                     <div className="card">
-                        {/* <div className="serice-logo">
-                            <img src="/images/services/software-development-icon.png" alt="" />
-                        </div> */}
+                        <div className="serice-logo">
+                            <img src="/images/services/cloud.png" alt="" />
+                        </div>
                         <div className="service-title">Cloud Engineers</div>
                         <div className="service-details">
                             Cloud engineers focus on deploying, managing, and optimizing applications on cloud platforms like
@@ -161,9 +169,9 @@ export const HomePage = () => {
                         <div className="bottom-bar c-1" />
                     </div>
                     <div className="card">
-                        {/* <div className="serice-logo">
-                            <img src="/images/services/software-development-icon.png" alt="" />
-                        </div> */}
+                        <div className="serice-logo">
+                            <img src="/images/services/security.png" alt="" />
+                        </div>
                         <div className="service-title">Security Engineers</div>
                         <div className="service-details">
                             Security engineers specialize in identifying and mitigating security vulnerabilities in software and
@@ -246,12 +254,13 @@ export const HomePage = () => {
                     Get in touch with <span className="p-c">Nextech Offshore</span>
                     <br /> today regarding any enquires about IT services, careers or simply to say Hi!
                 </div>
-                <div className="email-cont">
+                <a>Click here to email</a>
+                <a href="mailto:Information@nextechoffshore.com" className="email-cont">
                     <div className="icon">
                         <MdEmail />
                     </div>
                     <div className="text">Information@nextechoffshore.com</div>
-                </div>
+                </a>
                 <div className="email-cont">
                     <div className="icon">
                         <BsFillTelephoneFill />

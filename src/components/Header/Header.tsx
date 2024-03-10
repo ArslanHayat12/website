@@ -13,35 +13,46 @@ export const Header = (props: HeaderProps) => {
     const { setDisableScroll, activeTab, setActiveTab } = props
     const [showMenu, setshowMenu] = useState(false)
 
+    const hideMenu = () => {
+        setDisableScroll(false)
+        setshowMenu(false)
+    }
     return (
         <HeaderStyle>
-            <div className="logo">
+            <Link to={'/'} onClick={() => setActiveTab('home')} className="logo">
                 {/* <img src="/images/logo.png" alt="" /> */}
                 NexTech Offshore
-            </div>
+            </Link>
             <div className={`items ${showMenu ? 'show-menu' : ''}`}>
-                <div
-                    className="cross-icon"
-                    onClick={() => {
-                        setDisableScroll(false)
-                        setshowMenu(false)
-                    }}
-                >
+                <div className="cross-icon" onClick={hideMenu}>
                     <ImCross />{' '}
                 </div>
-                <Link to={'/'} onClick={() => setActiveTab('home')} className={`item ${activeTab == 'home' ? 'active' : ''}`}>
+                <Link
+                    to={'/'}
+                    onClick={() => {
+                        setActiveTab('home')
+                        hideMenu()
+                    }}
+                    className={`item ${activeTab == 'home' ? 'active' : ''}`}
+                >
                     Home
                 </Link>
                 <Link
                     to={'/services'}
-                    onClick={() => setActiveTab('services')}
+                    onClick={() => {
+                        setActiveTab('services')
+                        hideMenu()
+                    }}
                     className={`item ${activeTab == 'services' ? 'active' : ''}`}
                 >
                     Services
                 </Link>
                 <Link
                     to={'/about'}
-                    onClick={() => setActiveTab('about')}
+                    onClick={() => {
+                        setActiveTab('about')
+                        hideMenu()
+                    }}
                     className={`item ${activeTab == 'about' ? 'active' : ''}`}
                 >
                     About Us

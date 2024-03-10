@@ -11,28 +11,44 @@ export const Footer = (props: FooterProps) => {
         <FooterStyle>
             <div className="f-container">
                 <div className="footer-content">
-                    <div className="logo">
+                    <Link
+                        to={'/'}
+                        onClick={() => {
+                            setActiveTab('home')
+                            window.scrollTo(0, 0)
+                        }}
+                        className="logo"
+                    >
                         {/* <img src="/images/logo.png" alt="" /> */}
                         NexTech Offshore
-                    </div>
+                    </Link>
                     <div className="items">
                         <Link
                             to={'/'}
-                            onClick={() => setActiveTab('home')}
+                            onClick={() => {
+                                setActiveTab('home')
+                                window.scrollTo(0, 0)
+                            }}
                             className={`item ${activeTab == 'home' ? 'active' : ''}`}
                         >
                             Home
                         </Link>
                         <Link
                             to={'/services'}
-                            onClick={() => setActiveTab('services')}
+                            onClick={() => {
+                                setActiveTab('services')
+                                window.scrollTo(0, 0)
+                            }}
                             className={`item ${activeTab == 'services' ? 'active' : ''}`}
                         >
                             Services
                         </Link>
                         <Link
                             to={'/about'}
-                            onClick={() => setActiveTab('about')}
+                            onClick={() => {
+                                setActiveTab('about')
+                                window.scrollTo(0, 0)
+                            }}
                             className={`item ${activeTab == 'about' ? 'active' : ''}`}
                         >
                             About Us
@@ -53,7 +69,7 @@ export const Footer = (props: FooterProps) => {
                         </Link> */}
                     </div>
                 </div>
-                <div className="social">
+                {/* <div className="social">
                     <div className="copy-rights s-c">
                         Copyrights&copy; <span className="th-c">Soft Ocean</span> 2023.
                     </div>
@@ -71,7 +87,7 @@ export const Footer = (props: FooterProps) => {
                             <img src="/images/twitter.png" alt="" />
                         </a>
                     </div>
-                </div>
+                </div> */}
             </div>
         </FooterStyle>
     )

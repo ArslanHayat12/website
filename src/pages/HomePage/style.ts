@@ -113,6 +113,18 @@ export const AboutSection = styled.div`
             font-size: 18px;
             line-height: 1.667em;
         }
+        .button-cont {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0;
+            .button {
+                padding: 10px 30px;
+                color: #fff;
+                background: var(--theme-color);
+                border-radius: 4px;
+            }
+        }
     }
     .images-section {
         justify-self: end;
