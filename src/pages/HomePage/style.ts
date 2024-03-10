@@ -9,7 +9,7 @@ export const HomePageStyle = styled.div`
     border-radius: 18px;
         .content-section {
             flex: 1;
-            padding:5px;
+            padding:15px;
             .sub-title {
                 font-size: 16px;
                 line-height: 1.125em;
