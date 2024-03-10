@@ -5,8 +5,11 @@ export const HomePageStyle = styled.div`
         display: flex;
         align-items: center;
         gap: 40px;
+        background: #f4f4f4;
+    border-radius: 18px;
         .content-section {
             flex: 1;
+            padding:5px;
             .sub-title {
                 font-size: 16px;
                 line-height: 1.125em;

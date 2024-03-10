@@ -25,6 +25,7 @@ export const AboutSection = styled.div`
         .description {
             font-size: 18px;
             line-height: 1.667em;
+            color:#8184a3;
         }
     }
     .images-section {
@@ -71,6 +72,7 @@ export const HelpSection = styled.div`
             margin-bottom: 10px;
         }
         .description {
+            color:#8184a3;
             .sol {
                 margin-top: 4px;
                 font-weight: 500;
