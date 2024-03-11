@@ -6,10 +6,10 @@ export const HomePageStyle = styled.div`
         align-items: center;
         gap: 40px;
         background: #f4f4f4;
-    border-radius: 18px;
+        border-radius: 18px;
         .content-section {
             flex: 1;
-            padding:5px;
+            padding: 5px;
             .sub-title {
                 font-size: 16px;
                 line-height: 1.125em;
@@ -32,7 +32,6 @@ export const HomePageStyle = styled.div`
             position: relative;
             flex: 1;
             .img-1 {
-                padding-left: 30px;
                 img {
                     border: 1px solid #eff0f6;
                     border-radius: 18px;
@@ -115,17 +114,24 @@ export const AboutSection = styled.div`
         .description {
             font-size: 18px;
             line-height: 1.667em;
+            text-align: justify;
         }
         .button-cont {
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 10px 0;
+            flex-direction: column;
+            gap: 10px;
+            text-align: center;
+            span {
+                text-decoration: underline;
+            }
             .button {
-                padding: 10px 30px;
+                padding: 12px 30px;
                 color: #fff;
                 background: var(--theme-color);
                 border-radius: 4px;
+                line-height: normal;
             }
         }
     }

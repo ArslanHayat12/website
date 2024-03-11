@@ -66,12 +66,12 @@ export const HomePage = () => {
                         their staffing needs, we also strive to uplift the workforce in emerging markets, offering them better
                         opportunities and pathways for career growth, thus transforming lives for the better.
                         <br />
-                        Learn more about how we can help managing an Offshore workforce
-                    </div>
-                    <div className="button-cont">
-                        <Link to={'/about/#help'} className="button">
-                            Learn More
-                        </Link>
+                        <div className="button-cont">
+                            <span>Learn more about how we can help managing an Offshore workforce</span>
+                            <Link to={'/about/#help'} className="button">
+                                Learn More
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </AboutSection>
