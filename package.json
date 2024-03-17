@@ -7,6 +7,7 @@
         "emailjs": "^4.0.2",
         "emailjs-com": "^3.2.0",
         "formik": "^2.4.3",
+        "gh-pages": "^6.1.1",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-icons": "^4.10.1",
@@ -17,6 +18,7 @@
     "scripts": {
         "start": "webpack serve --mode development",
         "build": "webpack --mode production",
+        "deploy": "gh-pages -d build",
         "test": "jest --forceExit /src/__tests__",
         "lint": "eslint --rule \"@typescript-eslint/no-unused-vars: warn\" --fix \"./src/**/*.{js,jsx,ts,tsx,json}\"",
         "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
